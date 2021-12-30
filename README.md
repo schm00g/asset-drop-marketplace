@@ -1,3 +1,7 @@
+## Assets
+
+<img src="https://github.com/schm00g/asset-drop-marketplace/blob/main/public/mroizo.jpeg"/>
+
 ## Get started
 
 Install the dependencies...
