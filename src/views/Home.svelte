@@ -8,6 +8,7 @@
 	import Nested from '../components/Nested.svelte';
 	import Metadata from '../components/Metadata.svelte';
 	import ConnectWallet from '../components/ConnectWallet.svelte';
+	import SolanaStatus from "../components/SolanaStatus.svelte";
 	export let name = "World";
 	let src = '/mroizo.jpeg';
 	let string = `art by <strong>Mr. Oizo</strong>`;
@@ -30,6 +31,7 @@
 	<p>{@html string}</p>
 	<MintButton/>
 	<Metadata {...nftMetadata}/>
+	<SolanaStatus/>
 </main>
 
 <!-- styles are scoped to the component by default -->
