@@ -5,7 +5,6 @@
 	import Settings from "./views/Settings.svelte";
 	import Blog from "./views/Blog.svelte";
 	import Help from "./views/Help.svelte";
-	let homeUI: boolean = false;
 </script>
 
 <Router primary={false}>
