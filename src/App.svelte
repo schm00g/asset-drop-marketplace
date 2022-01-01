@@ -32,9 +32,4 @@
 			<Help />
 		</Route>
 	</div>
-	<!-- {#if homeUI}
-	  
-	{:else}
-	  
-	{/if} -->
 </Router>
