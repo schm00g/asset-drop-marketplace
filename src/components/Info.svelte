@@ -6,7 +6,6 @@
 </script>
 
 <div class="footer">
-    <!-- <h3>Solana Network Status</h3> -->
     <p>
         Last Synced Slot <b><code>{lastSyncedSlot}</code></b> Last Network Slot <b><code>{lastNetworkSlot}</code></b>
         Network Lag <b><code>{networkLag}</code></b>
