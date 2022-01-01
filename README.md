@@ -30,3 +30,14 @@ cd svelte-app
 *Note that you will need to have [Node.js](https://nodejs.org) installed.*
 
 <!-- The code is the art, the community interaction is the utility -->  
+
+# TODO
+
+* how does artist upload work?
+* mechanic? 1 piece on sale at a time? Gallery view + metadata
+* wallet connect
+* solana program / smart contract / candy machine
+* flesh out pages / viewes - some Figma prototype
+* tighten UI + styling + frosty Foundation esque vibe
+* bot measures - captcha?
+* host on vercel?
