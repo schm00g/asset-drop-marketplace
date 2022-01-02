@@ -44,7 +44,7 @@
 	}
 
 	img {
-		max-width: 70%;
+		max-width: 50%;
 	}
 
 	h1 {

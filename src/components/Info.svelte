@@ -21,9 +21,11 @@
 <style>
     .footer {
         /* TODO: scrolling issues */
+        writing-mode: vertical-lr;
+        text-orientation: mixed;
         color: rgb(165, 165, 165);
         position: fixed;
-        bottom: -8px;
+        bottom: 10px;
         right: 10px;
         width: 100%;
         padding-left: auto;
