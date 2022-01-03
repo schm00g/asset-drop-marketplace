@@ -1,5 +1,5 @@
 <svelte:head>
-  <title>Hello there!</title>
+	<title>Hello there!</title>
 </svelte:head>
 <script>
 	import { Router, Link, Route } from "svelte-navigator";
