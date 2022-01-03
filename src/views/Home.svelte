@@ -7,7 +7,7 @@
 	import MintButton from '../components/MintButton.svelte';
 	import Nested from '../components/Nested.svelte';
 	import Metadata from '../components/Metadata.svelte';
-	import ConnectWallet from '../components/ConnectWallet.svelte';
+	import ConnectWalletButton from '../components/ConnectWalletButton.svelte';
 	import SolanaStatus from "../components/SolanaStatus.svelte";
 	export let name = "World";
 	let src = '/mroizo.jpeg';
@@ -25,7 +25,7 @@
 
 <main>
 	<h1>Hello {name.toUpperCase()}!</h1>
-	<ConnectWallet/>
+	<ConnectWalletButton/>
 	<Nested link={"https://svelte.dev/tutorial"}/>
 	<img {src} alt="Artwork to display">
 	<p>{@html string}</p>
