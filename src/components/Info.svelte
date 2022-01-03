@@ -26,8 +26,8 @@
         color: rgb(165, 165, 165);
         position: fixed;
         bottom: 10px;
-        right: 10px;
-        width: 100%;
+        left: -10px;
+        width: 0;
         padding-left: auto;
         padding-right: auto;
 
