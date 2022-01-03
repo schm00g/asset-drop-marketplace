@@ -2,7 +2,6 @@
 	<title>Hello there!</title>
 </svelte:head>
 <script>
-	import { Router, Link, Route } from "svelte-navigator";
     // paths need to be relative ../
 	import MintButton from '../components/MintButton.svelte';
 	import Nested from '../components/Nested.svelte';

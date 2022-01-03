@@ -1,13 +1,24 @@
 <script>
-	let user = { walletConnected: false };
-
+	let user = { walletConnected: true };
 	function toggle() {
 		user.walletConnected = !user.walletConnected;
 	}
+    async function connect(){
+        try {
+            const resp = await window.solana.connect();
+            resp.publicKey.toString()
+            toggle();
+            // 26qv4GCcx98RihuK3c4T6ozB3J7L6VwCuFVc7Ta2A3Uo 
+        } catch (err) {
+            console.log(`Error message: `, err);
+            // { code: 4001, message: 'User rejected the request.' }
+        }
+    }
+
 </script>
 
 {#if user.walletConnected}
-<button on:click={toggle}>
+<button on:click={connect}>
 	Connect Wallet
 </button>
 {:else}
