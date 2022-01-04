@@ -5,16 +5,22 @@
 	}
     async function connect(){
         try {
-            const resp = await window.solana.connect();
+            const resp = await window.solana.connect({ onlyIfTrusted: true });
             resp.publicKey.toString()
-            toggle();
+            console.log(window.solana.isConnected);
+            user.walletConnected = window.solana.isConnected;
             // 26qv4GCcx98RihuK3c4T6ozB3J7L6VwCuFVc7Ta2A3Uo 
         } catch (err) {
+            user.walletConnected = window.solana.isConnected;
             console.log(`Error message: `, err);
             // { code: 4001, message: 'User rejected the request.' }
         }
     }
-
+    async function disconnect(){
+        window.solana.disconnect();
+        user.walletConnected = window.solana.isConnected;
+    }
+    // TODO: https://docs.phantom.app/integrating/sending-a-transaction
 </script>
 
 {#if user.walletConnected}
@@ -22,11 +28,14 @@
 	Connect Wallet
 </button>
 {:else}
-<button on:click={toggle}>
+<button on:click={disconnect}>
 	Disconnect Wallet
 </button>
 {/if}
 
+{#if user.walletConnected}
+    <p>hellloooo</p>
+{/if}
 <style>
     button {
         background-color: #0e0e0e;
